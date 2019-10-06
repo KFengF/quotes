@@ -70,10 +70,11 @@ class App extends React.Component {
                             href={ `https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${ quote.split(' ').join('%20') }"%20${ author }` }
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Post a tweet about the quote"
                             >
                                 <img src={ twitter } alt="twitter" style={ color } className="br4 pa2 w-100" />
                             </a></li>
-                            <li><a href="https://github.com/lukePeavey/quotable" target="_blank" rel="noopener noreferrer">
+                            <li><a href="https://github.com/lukePeavey/quotable" target="_blank" rel="noopener noreferrer" title="Quote API repository">
                                 <img src={ github } alt="github" style={ color } className="br4 pa2 w-100"/>
                             </a></li>
                             <li><button onClick={ this.newQuote } style={ color } className="f2 br4 pa2 pointer grow b--silver b" >Quote</button></li>
